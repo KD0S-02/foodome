@@ -1,0 +1,7 @@
+pandas
+openpyxl # For writing Excel files
+python-dotenv
+openai
+requests # (gnps_scrape.py might need it, or selenium if it's more complex)
+beautifulsoup4 # For gnps_scrape.py if using BeautifulSoup
+selenium # For gnps_scrape.py if using Selenium
