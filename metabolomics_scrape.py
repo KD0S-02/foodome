@@ -84,7 +84,8 @@ def process_studies(entries):
             )
             soup = BeautifulSoup(driver.page_source, "html.parser")
 
-            download_link = soup.find("a", href=True, string=lambda x: x and ("download data files" in x.lower() or "contains raw data" in x.lower()))
+            download_link = soup.find("a", href=True, string=lambda x: x and 
+                        ("download data files" in x.lower() or "contains raw data" in x.lower()))
             
             is_source_available = False
 
